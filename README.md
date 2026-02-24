@@ -24,9 +24,9 @@ The model emphasizes:
 ## Files
 
 - `LMR_AI_Charter_private_public_v0.1.md`
-  - Japanese charter (v0.1)
-- `LMR_AI_Charter_private_public_v0.1_en.md`
   - English charter (v0.1)
+- `LMR_AI_Charter_private_public_v0.1_ja.md`
+  - Japanese charter (v0.1)
 - `README.ja.md`
   - Japanese repository README
 
@@ -53,7 +53,7 @@ The model emphasizes:
 This charter is designed to be used across multiple layers rather than as a single-layer solution.
 
 - `Policy Layer`
-  - Adopt `LMR_AI_Charter_private_public_v0.1.md` / `_en.md` as the baseline document and revise for your organization
+  - Adopt `LMR_AI_Charter_private_public_v0.1.md` / `_ja.md` as the baseline document and revise for your organization
 - `Prompt Layer`
   - Use the "short version" in the charter to set AI stance, confirmation priority, and prohibitions
 - `Decision Layer` (Rules / Guardrails)
@@ -69,7 +69,7 @@ Example: Start with a minimum `Policy + Prompt + Decision` stack, then add `Inte
 
 ## Minimal Adoption Flow
 
-1. Adopt `LMR_AI_Charter_private_public_v0.1.md` or `LMR_AI_Charter_private_public_v0.1_en.md` as the baseline
+1. Adopt `LMR_AI_Charter_private_public_v0.1.md` or `LMR_AI_Charter_private_public_v0.1_ja.md` as the baseline
 2. Tune weights, thresholds, and exception conditions for your environment
 3. Use the charter's "short version" in your system prompt
 4. Use the charter's "minimal implementation sample" as the starting point for rule implementation
