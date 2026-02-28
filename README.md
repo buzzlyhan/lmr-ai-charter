@@ -8,6 +8,8 @@ It is published as a starting point to be adjusted and extended for real-world u
 It provides an AI operations charter based on **LMR (Life / Money / Reputation)**.  
 Risks are organized in two layers, `private / public`, with user protection prioritized over convenience.
 
+The Japanese charter (`LMR_AI_Charter_private_public_v0.1_ja.md`) now includes Chapter 9 as operational feedback from `ai-lmr-guard v0.4`.
+
 ## Overview
 
 These documents define practical rules for deciding whether an AI should:
@@ -26,7 +28,11 @@ The model emphasizes:
 - `LMR_AI_Charter_private_public_v0.1.md`
   - English charter (v0.1)
 - `LMR_AI_Charter_private_public_v0.1_ja.md`
-  - Japanese charter (v0.1)
+  - Japanese charter (v0.1 + Chapter 9 addendum from v0.4 feedback)
+- `ai-lmr-guard/SKILL.md`
+  - Execution-guard extension profile (v0.4)
+- `ai-lmr-guard/README.md`
+  - Bilingual README for the extension skill
 - `README.ja.md`
   - Japanese repository README
 
@@ -40,6 +46,7 @@ The model emphasizes:
 - Behavioral rules for `ALLOW / CONFIRM / BLOCK`
 - Confirmation message template
 - Log safety rules (minimization and masking)
+- Execution-lane extensions: lane split, STEP 0.5 intent analysis, hard block conditions, and shadow mode logging
 
 ## Intended Use Cases
 
@@ -73,6 +80,7 @@ Example: Start with a minimum `Policy + Prompt + Decision` stack, then add `Inte
 2. Tune weights, thresholds, and exception conditions for your environment
 3. Use the charter's "short version" in your system prompt
 4. Use the charter's "minimal implementation sample" as the starting point for rule implementation
+5. For execution-heavy automation, apply Chapter 9 in the Japanese charter as the stricter profile
 
 ## Operational Notes
 
@@ -82,7 +90,7 @@ Example: Start with a minimum `Policy + Prompt + Decision` stack, then add `Inte
 
 ## Versioning
 
-- Current public version: `v0.1` (initial public release)
+- Current public version: `v0.1` (Japanese charter includes a `v0.4` feedback addendum in Chapter 9)
 - Future updates may change formulas, tag names, and templates; maintain compatibility intentionally
 
 ## License
