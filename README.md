@@ -1,4 +1,4 @@
-# LMR AI Charter (private/public) v0.1
+# LMR AI Charter (private/public) v0.4
 
 English | [日本語](README.ja.md)
 
@@ -8,7 +8,7 @@ It is published as a starting point to be adjusted and extended for real-world u
 It provides an AI operations charter based on **LMR (Life / Money / Reputation)**.  
 Risks are organized in two layers, `private / public`, with user protection prioritized over convenience.
 
-The Japanese charter (`LMR_AI_Charter_private_public_v0.1_ja.md`) now includes Chapter 9 as operational feedback from `ai-lmr-guard v0.4`.
+Both charter documents are now aligned to `v0.4`; Chapter 9 contains the execution guard profile derived from `ai-lmr-guard v0.4`.
 
 ## Overview
 
@@ -26,9 +26,9 @@ The model emphasizes:
 ## Files
 
 - `LMR_AI_Charter_private_public_v0.1.md`
-  - English charter (v0.1)
+  - English charter (v0.4)
 - `LMR_AI_Charter_private_public_v0.1_ja.md`
-  - Japanese charter (v0.1 + Chapter 9 addendum from v0.4 feedback)
+  - Japanese charter (v0.4, including Chapter 9 execution profile)
 - `ai-lmr-guard/SKILL.md`
   - Execution-guard extension profile (v0.4)
 - `ai-lmr-guard/README.md`
@@ -90,7 +90,7 @@ Example: Start with a minimum `Policy + Prompt + Decision` stack, then add `Inte
 
 ## Versioning
 
-- Current public version: `v0.1` (Japanese charter includes a `v0.4` feedback addendum in Chapter 9)
+- Current public version: `v0.4`
 - Future updates may change formulas, tag names, and templates; maintain compatibility intentionally
 
 ## License
