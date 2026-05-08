@@ -83,6 +83,42 @@ Example: Start with a minimum `Policy + Prompt + Decision` stack, then add `Inte
 4. Use the charter's "minimal implementation sample" as the starting point for rule implementation
 5. For execution-heavy automation, apply Chapter 9 in the Japanese charter as the stricter profile
 
+## Referencing LMR from an LLM
+
+The simplest way to let an LLM reference the guard is to point it at the hosted `SKILL.md`.
+
+Raw GitHub URL:
+
+```text
+https://raw.githubusercontent.com/buzzlyhan/lmr-ai-charter/main/ai-lmr-guard/SKILL.md
+```
+
+CDN-style URL via jsDelivr:
+
+```text
+https://cdn.jsdelivr.net/gh/buzzlyhan/lmr-ai-charter@main/ai-lmr-guard/SKILL.md
+```
+
+Use `main` for development and review. For production agents, prefer a fixed commit hash or a release tag so the safety behavior does not change unexpectedly.
+
+Commit-pinned example:
+
+```text
+https://cdn.jsdelivr.net/gh/buzzlyhan/lmr-ai-charter@33255b8/ai-lmr-guard/SKILL.md
+```
+
+Minimal system-prompt pattern:
+
+```text
+Before executing external send, publication, deletion, financial/contract action,
+credential handling, or privilege changes, load and follow this LMR guard:
+https://raw.githubusercontent.com/buzzlyhan/lmr-ai-charter/main/ai-lmr-guard/SKILL.md
+
+If the file cannot be loaded, default to CONFIRM or BLOCK for high-risk actions.
+```
+
+If the LLM runtime cannot browse or fetch URLs, fetch `SKILL.md` at startup and inject the relevant section into the system/developer prompt. For token-constrained environments, embed the charter's short version and keep the full URL as the authoritative reference.
+
 ## Operational Notes
 
 - Scoring formulas and thresholds in the charter are examples and should be tuned for your environment
