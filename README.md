@@ -44,6 +44,7 @@ The model emphasizes:
 - Auxiliary flags such as `external_publish`, `irreversible`, `unknown_case`
 - Sample weighted risk-score formula
 - Behavioral rules for `ALLOW / CONFIRM / BLOCK`
+- Principle that treats deletion, erasure, and initialization as the highest-risk class of AI automation actions
 - Confirmation message template
 - Log safety rules (minimization and masking)
 - Execution-lane extensions: lane split, STEP 0.5 intent analysis, hard block conditions, and shadow mode logging
@@ -87,6 +88,7 @@ Example: Start with a minimum `Policy + Prompt + Decision` stack, then add `Inte
 - Scoring formulas and thresholds in the charter are examples and should be tuned for your environment
 - For high-risk domains (medical, legal, contract, security, etc.), plan for escalation to a human/specialist
 - Keep logs minimal; do not store secrets or personal data in raw form
+- Do not broaden deletion-like actions into full-content deletion or HD/disk formatting unless target, scope, recoverability, and explicit approval are clear
 
 ## Versioning
 
